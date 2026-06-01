@@ -17,13 +17,13 @@ Caméra → OpenCV (détection couleur) → ROS2 (décision) → Arduino (comman
 - **CAO** : SolidWorks — modélisation mécanique du convoyeur
 
 ## Structure
-├── opencv/
-│   └── detection_couleur.py   # Détection couleur par masque HSV
-├── ros2/
-│   ├── capteur_couleur.py     # Noeud 1 : publie la couleur détectée
-│   ├── decision_tri.py        # Noeud 2 : décide le bac de destination
-│   └── commande_servo.py      # Noeud 3 : commande l'angle du servo
-└── README.md
+opencv/
+      detection_couleur.py   # Détection couleur par masque HSV
+ros2/
+      capteur_couleur.py     # Noeud 1 : publie la couleur détectée
+      decision_tri.py        # Noeud 2 : décide le bac de destination
+      commande_servo.py      # Noeud 3 : commande l'angle du servo
+README.md
 
 ## Résultats
 - Détection de 3 catégories : Plastique (bleu), Verre (vert), Métal (gris)
